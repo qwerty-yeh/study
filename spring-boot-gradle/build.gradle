@@ -1,23 +1,25 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.3.RELEASE'
+		springBootVersion = "1.4.3.RELEASE"
 	}
 	repositories {
 		mavenCentral()
+		maven { url("https://plugins.gradle.org/m2/") }
+		jcenter()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'war'
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "org.springframework.boot"
+apply plugin: "war"
 
 war {
-	baseName = 'boot-gradle'
-	version = '0.0.1-SNAPSHOT'
+	baseName = "boot-gradle"
+	version = "0.0.1-SNAPSHOT"
 }
 
 springBoot {
@@ -29,10 +31,12 @@ targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+	maven { url("https://plugins.gradle.org/m2/") }
+	jcenter()
 }
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web','org.apache.tomcat.embed:tomcat-embed-jasper','javax.servlet:jstl')
-	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile("org.springframework.boot:spring-boot-starter-web","javax.servlet:jstl")
+	providedRuntime("org.apache.tomcat.embed:tomcat-embed-jasper","org.springframework.boot:spring-boot-starter-tomcat")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
