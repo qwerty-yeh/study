@@ -1,4 +1,8 @@
 // 2018-02-09
+12:51
+上傳 github
+
+12:49
 gradle bootRepackage 輸出成 jar 檔案，執行會出現以下錯誤
 
 Whitelabel Error Page
