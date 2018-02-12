@@ -1,6 +1,22 @@
 // 2018-02-12
+15:50
+整理最簡程式
+
+
+
 12:31
 建立分支 jar
+修改符合測試 jar 設定
+1.port 5000
+2.增加 org.springframework.boot:spring-boot-starter-thymeleaf
+3.放棄 jsp 完整改為 thymeleaf 架構，都可以執行了
+
+結論：
+1.純 java 環境，不再支援 jsp，有 tomcat 的環境支援
+2.war jar 是一樣的東西，war 可以支援 jsp，所以會包含 /WEB_NF/jsp，這些是舊的東西
+( 要注意在 aws 上 8080 跟 5000 port 差異 )
+
+
 
 12:18
 war 測試完畢，開始建立分支測試 jar
