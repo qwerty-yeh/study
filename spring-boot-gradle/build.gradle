@@ -4,7 +4,6 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
-		maven { url("https://plugins.gradle.org/m2/") }
 		jcenter()
 	}
 	dependencies {
@@ -31,12 +30,11 @@ targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
-	maven { url("https://plugins.gradle.org/m2/") }
 	jcenter()
 }
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter-web","javax.servlet:jstl")
-	providedRuntime("org.apache.tomcat.embed:tomcat-embed-jasper","org.springframework.boot:spring-boot-starter-tomcat")
+	compile("org.springframework.boot:spring-boot-starter-web", "javax.servlet:jstl")
+	providedRuntime("org.apache.tomcat.embed:tomcat-embed-jasper", "org.springframework.boot:spring-boot-starter-tomcat")
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
