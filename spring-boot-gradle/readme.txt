@@ -7,7 +7,7 @@ repositories {
 To
 repositories {
 	jcenter()
-    maven { url "http://repo.spring.io/libs-snapshot" 
+    maven { url "http://repo.spring.io/libs-snapshot" }
 }
 
 16:14
