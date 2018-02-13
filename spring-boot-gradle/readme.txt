@@ -1,7 +1,16 @@
+// 2018-02-13
+09:48
+測試將 jar 放置在 64bit Amazon Linux 2017.09 v2.7.5 running Tomcat 8 Java 8 環境
+修改設定
+1.port 8080
+2.移除 org.springframework.boot:spring-boot-starter-tomcat
+
+結論: 失敗，一直發生 tomcat 回傳 404，server 端的 spring boot 啟動不了
+
+
 // 2018-02-12
 15:50
 整理最簡程式
-
 
 
 12:31
